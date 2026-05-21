@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PEXA — Campaign Results · 20 Apr–4 May 2026</title>
+<title>PEXA — Campaign Results · 20 Apr–9 May 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
@@ -107,6 +107,47 @@
     text-transform: uppercase;
     color: var(--text3);
     margin-bottom: 12px;
+  }
+
+  /* Campaign separator - used to fully break the page between distinct workstreams */
+  .campaign-break {
+    margin: 4rem 0 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 3px double var(--border2);
+    position: relative;
+  }
+  .campaign-break::before {
+    content: 'SEPARATE WORKSTREAM';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg);
+    padding: 0 14px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--text3);
+  }
+  .campaign-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: var(--text);
+    margin-bottom: 5px;
+  }
+  .campaign-header h2 em { font-style: normal; color: var(--blue); }
+  .campaign-header .header-meta { font-size: 13px; color: var(--text2); margin-bottom: 12px; }
+  .campaign-header .header-meta span { margin-right: 14px; }
+  .campaign-header .campaign-note {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: var(--amber-bg);
+    color: var(--amber);
+    margin-bottom: 1.5rem;
   }
 
   /* KPI strip */
@@ -462,13 +503,13 @@
 <div class="page">
 
   <header class="header">
-    <div class="header-logos"><img src="data:image/png;base64,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" alt="PEXA" class="logo-pexa"><div class="header-divider"></div><img src="data:image/webp;base64,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" alt="Noisy Beast" class="logo-noisy"></div>
+    <div class="header-logos"><img src="data:image/jpeg;base64,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" alt="PEXA" class="logo-pexa"><div class="header-divider"></div><img src="data:image/jpeg;base64,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" alt="Noisy Beast" class="logo-noisy"></div>
     <div class="header-row">
       <div>
         <h1>Campaign Results — <em>PEXA Clear</em></h1>
         <div class="header-meta">
-          <span>20 Apr – 4 May 2026</span>
-          <span>15 days</span>
+          <span>20 Apr – 19 May 2026</span>
+          <span>30 days</span>
           <span>BOF / Acquisition</span>
           <span>AUD</span>
         </div>
@@ -479,36 +520,36 @@
     </div>
   </header>
 
-  <div class="section-label">Summary</div>
+  <div class="section-label">BAU Campaigns — Summary</div>
   <div class="kpi-grid">
     <div class="kpi blue">
       <div class="kpi-label">Total Spend</div>
-      <div class="kpi-value">$19.6K</div>
+      <div class="kpi-value">$37.9K</div>
       <div class="kpi-sub">across all platforms</div>
     </div>
     <div class="kpi green">
       <div class="kpi-label">Impressions</div>
-      <div class="kpi-value">1.96M</div>
-      <div class="kpi-sub">15-day window</div>
+      <div class="kpi-value">3.90M</div>
+      <div class="kpi-sub">30-day window</div>
     </div>
     <div class="kpi amber">
       <div class="kpi-label">Conversions</div>
-      <div class="kpi-value">982</div>
-      <div class="kpi-sub">$19.97 cost per conv.</div>
+      <div class="kpi-value">842</div>
+      <div class="kpi-sub">$45.02 cost per conv.</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Clicks</div>
-      <div class="kpi-value">3,593</div>
+      <div class="kpi-value">3,630</div>
       <div class="kpi-sub">blended</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Avg CPM</div>
-      <div class="kpi-value">$10.02</div>
+      <div class="kpi-value">$9.71</div>
       <div class="kpi-sub">blended</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Avg CPC</div>
-      <div class="kpi-value">$5.46</div>
+      <div class="kpi-value">$10.44</div>
       <div class="kpi-sub">blended</div>
     </div>
   </div>
@@ -518,18 +559,18 @@
       <div class="card-title">Spend by Platform</div>
       <div class="bar-row">
         <span class="bar-label">Trade Desk</span>
-        <div class="bar-track"><div class="bar-fill" style="width:51%; background:var(--blue);"></div></div>
-        <span class="bar-val">$9,998</span>
+        <div class="bar-track"><div class="bar-fill" style="width:46.1%; background:var(--blue);"></div></div>
+        <span class="bar-val">$17,473</span>
       </div>
       <div class="bar-row">
         <span class="bar-label">LinkedIn</span>
-        <div class="bar-track"><div class="bar-fill" style="width:35.4%; background:var(--green);"></div></div>
-        <span class="bar-val">$6,950</span>
+        <div class="bar-track"><div class="bar-fill" style="width:36.8%; background:var(--green);"></div></div>
+        <span class="bar-val">$13,967</span>
       </div>
       <div class="bar-row">
         <span class="bar-label">Meta</span>
-        <div class="bar-track"><div class="bar-fill" style="width:13.6%; background:var(--amber);"></div></div>
-        <span class="bar-val">$2,666</span>
+        <div class="bar-track"><div class="bar-fill" style="width:17.1%; background:var(--amber);"></div></div>
+        <span class="bar-val">$6,471</span>
       </div>
     </div>
 
@@ -537,18 +578,18 @@
       <div class="card-title">Conversions by Platform</div>
       <div class="bar-row">
         <span class="bar-label">Trade Desk</span>
-        <div class="bar-track"><div class="bar-fill" style="width:80.4%; background:var(--blue);"></div></div>
-        <span class="bar-val">790 · $12.66</span>
+        <div class="bar-track"><div class="bar-fill" style="width:46.1%; background:var(--blue);"></div></div>
+        <span class="bar-val">453 · $38.57</span>
       </div>
       <div class="bar-row">
         <span class="bar-label">Meta</span>
-        <div class="bar-track"><div class="bar-fill" style="width:17.2%; background:var(--amber);"></div></div>
-        <span class="bar-val">169 · $15.78</span>
+        <div class="bar-track"><div class="bar-fill" style="width:42.3%; background:var(--amber);"></div></div>
+        <span class="bar-val">356 · $18.18</span>
       </div>
       <div class="bar-row">
         <span class="bar-label">LinkedIn</span>
-        <div class="bar-track"><div class="bar-fill" style="width:2.3%; background:var(--green);"></div></div>
-        <span class="bar-val">23 · $302.17</span>
+        <div class="bar-track"><div class="bar-fill" style="width:3.9%; background:var(--green);"></div></div>
+        <span class="bar-val">33 · $423.24</span>
       </div>
     </div>
   </div>
@@ -576,33 +617,33 @@
         <tbody>
           <tr>
             <td>Book a Demo</td>
-            <td>79,149</td>
-            <td>$2,024</td>
-            <td>130</td>
-            <td>$15.57</td>
+            <td>157,404</td>
+            <td>$4,479</td>
+            <td>237</td>
+            <td>$18.90</td>
           </tr>
           <tr>
             <td>Register</td>
-            <td>21,191</td>
-            <td>$642</td>
-            <td>39</td>
-            <td>$16.46</td>
+            <td>70,455</td>
+            <td>$1,991</td>
+            <td>119</td>
+            <td>$16.73</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
             <td>Total</td>
-            <td>100,340</td>
-            <td>$2,666</td>
-            <td>169</td>
-            <td>$15.78</td>
+            <td>227,859</td>
+            <td>$6,471</td>
+            <td>356</td>
+            <td>$18.18</td>
           </tr>
         </tfoot>
       </table>
       <div class="stat-row">
-        <span class="stat-item">CTR <strong>0.82%</strong></span>
-        <span class="stat-item">CPM <strong>$26.57</strong></span>
-        <span class="stat-item">CPC <strong>$3.25</strong></span>
+        <span class="stat-item">CTR <strong>0.72%</strong></span>
+        <span class="stat-item">CPM <strong>$28.40</strong></span>
+        <span class="stat-item">CPC <strong>$3.94</strong></span>
       </div>
 
       <div class="card-title" style="margin-top: 20px;">Meta — Creative Breakdown</div>
@@ -623,28 +664,28 @@
         </thead>
         <tbody>
           <tr>
-            <td>How to get AML compliant before the deadline <span class="pill pill-amber">Paused</span></td>
+            <td>How to get AML compliant before the deadline</td>
             <td style="color:var(--text2); font-weight:400;">Book a Demo</td>
-            <td>77</td>
-            <td>$11.46</td>
+            <td>56</td>
+            <td>$15.76</td>
           </tr>
           <tr>
             <td>Get AML compliant and get back to business</td>
             <td style="color:var(--text2); font-weight:400;">Book a Demo</td>
-            <td>57</td>
-            <td>$17.89</td>
+            <td>133</td>
+            <td>$20.07</td>
           </tr>
           <tr>
-            <td>Get AML compliant before it gets complicated <span class="pill pill-amber">New</span></td>
+            <td>Get AML compliant before it gets complicated</td>
             <td style="color:var(--text2); font-weight:400;">Book a Demo</td>
-            <td>12</td>
-            <td>$21.63</td>
+            <td>48</td>
+            <td>$19.32</td>
           </tr>
           <tr>
             <td>Get started now with free sign up and no lock-ins</td>
             <td style="color:var(--text2); font-weight:400;">Register</td>
-            <td>12</td>
-            <td>$66.17</td>
+            <td>119</td>
+            <td>$16.73</td>
           </tr>
         </tbody>
       </table>
@@ -672,33 +713,33 @@
         <tbody>
           <tr>
             <td>Book a Demo</td>
-            <td>69,168</td>
-            <td>$4,162</td>
-            <td>18</td>
-            <td>$231.20</td>
+            <td>157,751</td>
+            <td>$9,494</td>
+            <td>24</td>
+            <td>$395.59</td>
           </tr>
           <tr>
             <td>Register</td>
-            <td>43,349</td>
-            <td>$2,788</td>
-            <td>5</td>
-            <td>$557.63</td>
+            <td>71,280</td>
+            <td>$4,473</td>
+            <td>9</td>
+            <td>$496.99</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
             <td>Total</td>
-            <td>112,517</td>
-            <td>$6,950</td>
-            <td>23</td>
-            <td>$302.17</td>
+            <td>229,031</td>
+            <td>$13,967</td>
+            <td>33</td>
+            <td>$423.24</td>
           </tr>
         </tfoot>
       </table>
       <div class="stat-row">
-        <span class="stat-item">CTR <strong>0.46%</strong></span>
-        <span class="stat-item">CPM <strong>$61.77</strong></span>
-        <span class="stat-item">CPC <strong>$13.31</strong></span>
+        <span class="stat-item">CTR <strong>0.47%</strong></span>
+        <span class="stat-item">CPM <strong>$60.98</strong></span>
+        <span class="stat-item">CPC <strong>$12.93</strong></span>
       </div>
 
       <div class="card-title" style="margin-top: 20px;">LinkedIn — Creative Breakdown</div>
@@ -719,7 +760,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>How to get AML compliant before the deadline <span class="pill pill-amber">Paused</span></td>
+            <td>How to get AML compliant before the deadline</td>
             <td style="color:var(--text2); font-weight:400;">Book a Demo</td>
             <td>7</td>
             <td>$196.65</td>
@@ -727,24 +768,23 @@
           <tr>
             <td>Get AML compliant and get back to business</td>
             <td style="color:var(--text2); font-weight:400;">Book a Demo</td>
-            <td>5</td>
-            <td>$195.87</td>
+            <td>6</td>
+            <td>$284.65</td>
           </tr>
           <tr>
             <td>Get AML compliant before it gets complicated</td>
             <td style="color:var(--text2); font-weight:400;">Book a Demo</td>
-            <td>6</td>
-            <td>$300.90</td>
+            <td>11</td>
+            <td>$582.70</td>
           </tr>
           <tr>
             <td>Get started now with free sign up and no lock-ins</td>
             <td style="color:var(--text2); font-weight:400;">Register</td>
-            <td>5</td>
-            <td>$557.63</td>
+            <td>9</td>
+            <td>$496.99</td>
           </tr>
         </tbody>
       </table>
-
     </div>
   </div>
 
@@ -766,31 +806,40 @@
         <tr>
           <td>AML Mar–Apr 26 · Real Estate Agents &amp; Legal Professionals<span class="pill pill-blue">Display</span></td>
           <td>Display</td>
-          <td>1,355,042</td>
-          <td>$3,258</td>
-          <td>$2.40</td>
-          <td>546</td>
-          <td>$5.97</td>
+          <td>2,839,317</td>
+          <td>$7,665</td>
+          <td>$2.70</td>
+          <td>318</td>
+          <td>$24.11</td>
         </tr>
         <tr>
           <td>AML Apr–Jun 26 · Real Estate Agents (PG)<span class="pill pill-blue">Display</span></td>
           <td>Display</td>
-          <td>388,991</td>
-          <td>$6,740</td>
-          <td>$17.33</td>
-          <td>244</td>
-          <td>$27.62</td>
+          <td>559,265</td>
+          <td>$9,717</td>
+          <td>$17.38</td>
+          <td>133</td>
+          <td>$73.06</td>
+        </tr>
+        <tr>
+          <td>AML Mar–Apr 26 · Real Estate Agents &amp; Legal Professionals (2)<span class="pill pill-blue">Display</span></td>
+          <td>Display</td>
+          <td>48,302</td>
+          <td>$90</td>
+          <td>$1.87</td>
+          <td>2</td>
+          <td>$45.24</td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
           <td>Total</td>
           <td></td>
-          <td>1,744,033</td>
-          <td>$9,998</td>
-          <td>$5.74</td>
-          <td>790</td>
-          <td>$12.66</td>
+          <td>3,446,884</td>
+          <td>$17,473</td>
+          <td>$5.07</td>
+          <td>453</td>
+          <td>$38.57</td>
         </tr>
       </tfoot>
     </table>
@@ -798,12 +847,11 @@
     <div class="format-grid">
       <div class="format-card">
         <div class="format-card-title">Display</div>
-        <div class="format-row"><span class="fk">Impressions</span><span class="fv">1,744,033</span></div>
-        <div class="format-row"><span class="fk">Spend</span><span class="fv">$9,998</span></div>
-        <div class="format-row"><span class="fk">Conversions</span><span class="fv">790</span></div>
-        <div class="format-row"><span class="fk">Avg CPM</span><span class="fv">$5.74</span></div>
+        <div class="format-row"><span class="fk">Impressions</span><span class="fv">3,446,884</span></div>
+        <div class="format-row"><span class="fk">Spend</span><span class="fv">$17,473</span></div>
+        <div class="format-row"><span class="fk">Conversions</span><span class="fv">453</span></div>
+        <div class="format-row"><span class="fk">Avg CPM</span><span class="fv">$5.07</span></div>
       </div>
-
     </div>
 
     <div class="card-title" style="margin-top: 20px;">The Trade Desk — Conversions by Pixel</div>
@@ -819,29 +867,36 @@
       <tbody>
         <tr>
           <td>AML Mar–Apr 26 · Real Estate Agents &amp; Legal Professionals<span class="pill pill-blue">Display</span></td>
-          <td>457</td>
-          <td>55</td>
-          <td>546</td>
+          <td>98</td>
+          <td>220</td>
+          <td>318</td>
         </tr>
         <tr>
           <td>AML Apr–Jun 26 · Real Estate Agents (PG)<span class="pill pill-blue">Display</span></td>
-          <td>214</td>
-          <td>24</td>
-          <td>244</td>
+          <td>39</td>
+          <td>94</td>
+          <td>133</td>
+        </tr>
+        <tr>
+          <td>AML Mar–Apr 26 · Real Estate Agents &amp; Legal Professionals (2)<span class="pill pill-blue">Display</span></td>
+          <td>1</td>
+          <td>1</td>
+          <td>2</td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
           <td>Total</td>
-          <td>671</td>
-          <td>79</td>
-          <td>790</td>
+          <td>138</td>
+          <td>315</td>
+          <td>453</td>
         </tr>
       </tfoot>
     </table>
     <div class="stat-row">
-      <span class="stat-item" style="font-size:11px;">Book a Demo = Book a Demo Completed + Button Click combined · Register = Register of Interest + Successful Registration + Register Button Click combined · PDOOH pixel conversions excluded from total per methodology</span>
+      <span class="stat-item" style="font-size:11px;">Book a Demo = Book a Demo Button Click + Book a Demo Completed · Register = Register Button Click + Successful Registration · PDOOH excluded from this report</span>
     </div>
+
   </div>
 
   <div class="card" style="margin-bottom: 12px;">
@@ -849,30 +904,30 @@
     <div class="eff-grid">
       <div class="eff-col">
         <div class="eff-name">Meta</div>
-        <div class="eff-cpa" style="color:var(--green);">$15.78</div>
+        <div class="eff-cpa" style="color:var(--green);">$18.18</div>
         <div class="eff-cpa-label">cost per conversion</div>
-        <div class="eff-row">CTR <strong>0.82%</strong></div>
-        <div class="eff-row">CPM <strong>$26.57</strong></div>
-        <div class="eff-row">CPC <strong>$3.25</strong></div>
-        <div class="eff-row">Conversions <strong>169</strong></div>
+        <div class="eff-row">CTR <strong>0.72%</strong></div>
+        <div class="eff-row">CPM <strong>$28.40</strong></div>
+        <div class="eff-row">CPC <strong>$3.94</strong></div>
+        <div class="eff-row">Conversions <strong>356</strong></div>
       </div>
       <div class="eff-col">
         <div class="eff-name">The Trade Desk</div>
-        <div class="eff-cpa" style="color:var(--blue);">$12.66</div>
+        <div class="eff-cpa" style="color:var(--blue);">$38.57</div>
         <div class="eff-cpa-label">cost per conversion</div>
         <div class="eff-row">CTR <strong>0.02%</strong></div>
-        <div class="eff-row">CPM <strong>$5.74</strong></div>
+        <div class="eff-row">CPM <strong>$5.07</strong></div>
         <div class="eff-row">CPC <strong>N/A</strong></div>
-        <div class="eff-row">Conversions <strong>790</strong></div>
+        <div class="eff-row">Conversions <strong>453</strong></div>
       </div>
       <div class="eff-col">
         <div class="eff-name">LinkedIn</div>
-        <div class="eff-cpa" style="color:var(--red);">$302.17</div>
+        <div class="eff-cpa" style="color:var(--red);">$423.24</div>
         <div class="eff-cpa-label">cost per conversion</div>
-        <div class="eff-row">CTR <strong>0.46%</strong></div>
-        <div class="eff-row">CPM <strong>$61.77</strong></div>
-        <div class="eff-row">CPC <strong>$13.31</strong></div>
-        <div class="eff-row">Conversions <strong>23</strong></div>
+        <div class="eff-row">CTR <strong>0.47%</strong></div>
+        <div class="eff-row">CPM <strong>$60.98</strong></div>
+        <div class="eff-row">CPC <strong>$12.93</strong></div>
+        <div class="eff-row">Conversions <strong>33</strong></div>
       </div>
     </div>
   </div>
@@ -892,12 +947,12 @@
         <span class="insight-tag positive">Strong performer</span>
       </div>
       <ul class="insight-points">
-        <li contenteditable="false">Meta delivered the strongest conversion efficiency of all three platforms at <strong>$15.78 cost per conversion</strong>, well below the blended average of $19.97, making it the most cost-effective channel for direct response in this period.</li>
-        <li contenteditable="false">The Book a Demo ad set drove the majority of volume (130 of 169 conversions) on a significantly larger impression share. The Register ad set also performed efficiently on a smaller budget, though following this period budget has been consolidated to Book a Demo only.</li>
-        <li contenteditable="false">"How to get AML compliant before the deadline" was the strongest converting creative in the period with 77 conversions at a $11.46 CPA, but was paused during the flight. Rather than reactivating in isolation, this creative will be brought back as part of a broader creative refresh alongside new assets currently in production.</li>
-        <li contenteditable="false"><span class="rec-label">Action taken</span> Register ad set switched off. Budget consolidated to Book a Demo to focus spend on the higher-performing conversion goal.</li>
-        <li contenteditable="false"><span class="rec-label">Action taken</span> Creative reactivation of "How to get AML compliant before the deadline" held pending new assets from client. Will relaunch as a full creative refresh.</li>
-        <li contenteditable="false"><span class="rec-label">Recommendation</span> Given the strong CPA performance, Meta warrants increased budget consideration in the next phase. Testing broader or lookalike audience expansion could help scale conversion volume without significantly impacting efficiency.</li>
+        <li contenteditable="false">Meta continued to deliver the strongest conversion efficiency across all three platforms at <strong>$18.18 cost per conversion</strong>. It is worth noting that Meta figures include modelled conversions, where Meta estimates conversions it cannot directly observe due to privacy restrictions. We recommend validating these against your internal reporting — if the performance is consistent with what you are seeing, Meta is a strong case for continued budget investment.</li>
+        <li contenteditable="false">The Book a Demo ad set drove the majority of volume (237 of 356 conversions) at $18.90 CPA. The Register ad set also performed efficiently at $16.73 CPA across 119 conversions.</li>
+        <li contenteditable="false">"How to get AML compliant before the deadline" was the strongest performing creative in the period with 56 conversions at $15.76 CPA. Based on this performance, we are reactivating this message across all channels to give it a full run.</li>
+        <li contenteditable="false"><span class="rec-label">Action taken</span> $5,011 of budget was moved from LinkedIn to Meta on Tuesday 19 May, as requested, given Meta's strong conversion performance relative to LinkedIn.</li>
+        <li contenteditable="false"><span class="rec-label">Action taken</span> "How to get AML compliant before the deadline" reactivated across all channels as the best performing creative in the period.</li>
+        <li contenteditable="false"><span class="rec-label">Recommendation</span> Given Meta's consistent efficiency, we would recommend considering further budget reallocation from LinkedIn to Meta in the next flight if internal data validates the conversion figures we are seeing in platform.</li>
       </ul>
     </div>
 
@@ -907,11 +962,12 @@
         <span class="insight-tag neutral">Scale &amp; reach</span>
       </div>
       <ul class="insight-points">
-        <li contenteditable="false">Trade Desk Display drove strong reach and conversion volume, delivering <strong>1.74M impressions and 790 conversions</strong> at a blended CPM of $5.74, demonstrating excellent value for broad coverage across real estate and legal professional audiences.</li>
-        <li contenteditable="false">The Display REA and Legal line item was the standout performer, delivering 546 conversions at a CPM of just $2.40. This is significantly more cost-efficient than the REA-PG programmatic guaranteed line and represents a strong case for continued investment in this placement.</li>
-        <li contenteditable="false">The REA-PG line item delivered 244 conversions at a higher CPM of $17.33, reflecting the premium nature of programmatic guaranteed inventory. Performance was solid relative to the buy type and warrants continued inclusion as a brand-safe, premium environment.</li>
-        <li contenteditable="false"><span class="rec-label">Recommendation</span> Prioritise budget toward the Display REA and Legal line item in the next flight given its clear efficiency advantage, while maintaining the REA-PG line for premium placement coverage.</li>
-        <li contenteditable="false"><span class="rec-label">Recommendation</span> Review creative rotation within Display line items to ensure newer creatives are given adequate impression share to assess performance fairly, rather than being suppressed by platform optimisation toward established performers.</li>
+        <li contenteditable="false">Trade Desk Display delivered strong reach over the 30-day period, generating <strong>3.45M impressions and 453 conversions</strong> at a blended CPM of $5.07, demonstrating efficient broad coverage across real estate and legal professional audiences.</li>
+        <li contenteditable="false">The REA and Legal line item drove the majority of volume at 318 conversions and a CPM of $2.70, making it the most cost-efficient line item in the buy. The REA-PG programmatic guaranteed line delivered 133 conversions at a higher CPM of $17.38, reflecting the premium nature of that inventory.</li>
+        <li contenteditable="false"><span class="rec-label">Action taken</span> A new Register campaign on Biddable Display has been set up to separate messaging by conversion goal, with a 70/30 budget split applied between Book a Demo and Register.</li>
+        <li contenteditable="false"><span class="rec-label">Action taken</span> PDOOH was switched off on Thursday. Remaining PDOOH budget was redirected to the Melbourne Pop Up event.</li>
+        <li contenteditable="false"><span class="rec-label">Action taken</span> "How to get AML compliant before the deadline" reactivated across all channels as the best performing creative in the period.</li>
+        <li contenteditable="false"><span class="rec-label">Recommendation</span> Monitor the new Biddable Display Register campaign closely in the first week to assess whether the 70/30 split is delivering efficient CPAs across both conversion goals, and adjust accordingly.</li>
       </ul>
     </div>
 
@@ -921,29 +977,279 @@
         <span class="insight-tag watch">Optimisation needed</span>
       </div>
       <ul class="insight-points">
-        <li contenteditable="false">LinkedIn delivered the highest CPM ($61.77) and cost per conversion ($302.17) of the three platforms, consistent with LinkedIn's premium pricing for professional audiences. The conversion volume of 23 over the period reflects the platform's strength in quality of reach rather than volume.</li>
-        <li contenteditable="false">LinkedIn's value is in accessing verified senior decision-makers in real estate and legal that other platforms cannot accurately target. The higher cost per conversion should be considered in the context of audience quality and intent rather than compared directly to Meta or Display benchmarks.</li>
-        <li contenteditable="false">The Register ad set returned a CPA of $557.63 on 5 conversions. Following this period the Register campaign has been switched off and budget consolidated to Book a Demo, which was the stronger-performing conversion goal across all platforms.</li>
-        <li contenteditable="false">"How to get AML compliant before the deadline" was the best performing Book a Demo creative by CPA at $196.65, but was paused during the flight. This creative will be held and relaunched as part of a broader creative refresh rather than reactivated in isolation.</li>
-        <li contenteditable="false"><span class="rec-label">Action taken</span> Register ad set switched off. Budget moved to Book a Demo.</li>
-        <li contenteditable="false"><span class="rec-label">Recommendation</span> When new creative assets are available, relaunch "How to get AML compliant before the deadline" alongside fresh messages as a clean creative test. LinkedIn's audience quality makes it worth persisting with the right messaging in place.</li>
+        <li contenteditable="false">LinkedIn delivered 33 conversions over the 30-day period at a blended CPA of $423.24, consistent with LinkedIn's premium pricing for verified professional audiences. The cost per conversion reflects the platform's strength in audience quality rather than volume.</li>
+        <li contenteditable="false">LinkedIn's value lies in accessing senior decision-makers in real estate and legal that other platforms cannot accurately target. The higher cost per conversion should be considered in the context of audience intent and downstream deal value rather than compared directly to Meta or Display benchmarks.</li>
+        <li contenteditable="false">The Book a Demo ad set returned a CPA of $395.59 across 24 conversions. The Register ad set delivered 9 conversions at $496.99 CPA.</li>
+        <li contenteditable="false">"How to get AML compliant before the deadline" was the most efficient creative at $196.65 CPA, reinforcing the case for its reactivation which has now been actioned across all channels.</li>
+        <li contenteditable="false"><span class="rec-label">Action taken</span> $5,011 of LinkedIn budget was moved to Meta on Tuesday 19 May, as requested, to capitalise on Meta's stronger conversion performance.</li>
+        <li contenteditable="false"><span class="rec-label">Action taken</span> "How to get AML compliant before the deadline" reactivated across all channels as the best performing creative in the period.</li>
+        <li contenteditable="false"><span class="rec-label">Recommendation</span> If Meta's conversion performance is validated against your internal data, we would recommend continuing to shift budget from LinkedIn to Meta. Meta is delivering conversions at a significantly lower CPA and increasing its share of budget could meaningfully improve overall campaign efficiency.</li>
         <li contenteditable="false"><span class="rec-label">Recommendation</span> Consider testing a Lead Gen Form format as an alternative to landing page conversions. LinkedIn's native form product reduces friction and typically improves conversion rates for professional audiences.</li>
       </ul>
     </div>
 
   </div>
 
+  <div class="campaign-break">
+    <div class="campaign-header">
+      <h2>PEXA Clear Pop-Up Events — <em>LinkedIn</em></h2>
+      <div class="header-meta">
+        <span>Geelong + Melbourne</span>
+        <span>20 Apr – 19 May 2026</span>
+        <span>LinkedIn only</span>
+        <span>AUD</span>
+      </div>
+      <div class="campaign-note">Separate activation — not included in BAU campaign totals above</div>
+    </div>
+
+    <div class="section-label">Pop-Up Events Summary</div>
+    <div class="kpi-grid">
+      <div class="kpi blue">
+        <div class="kpi-label">Pop-Up Spend</div>
+        <div class="kpi-value">$2,264</div>
+        <div class="kpi-sub">Sponsored Content</div>
+      </div>
+      <div class="kpi green">
+        <div class="kpi-label">Impressions</div>
+        <div class="kpi-value">16,962</div>
+        <div class="kpi-sub">Sponsored Content</div>
+      </div>
+      <div class="kpi amber">
+        <div class="kpi-label">Conversions</div>
+        <div class="kpi-value">0</div>
+        <div class="kpi-sub">tracking issue flagged</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Landing page clicks</div>
+        <div class="kpi-value">156</div>
+        <div class="kpi-sub">$14.52 CPC</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">InMail sends</div>
+        <div class="kpi-value">372</div>
+        <div class="kpi-sub">100 opens · 26.88%</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Blended CTR</div>
+        <div class="kpi-value">0.92%</div>
+        <div class="kpi-sub">Sponsored Content</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 12px;">
+      <div class="card-title">Sponsored Content — Summary by Event</div>
+    <table class="data-table" style="table-layout: fixed;">
+      <colgroup>
+        <col style="width: 24%">
+        <col style="width: 13%">
+        <col style="width: 13%">
+        <col style="width: 12%">
+        <col style="width: 12%">
+        <col style="width: 13%">
+        <col style="width: 13%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Impressions</th>
+          <th>Clicks</th>
+          <th>CTR</th>
+          <th>CPC</th>
+          <th>Spend</th>
+          <th>Conv.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Victoria (Geelong)<span class="pill pill-blue">Sponsored Content</span></td>
+          <td>12,407</td>
+          <td>50</td>
+          <td>0.40%</td>
+          <td>$38.11</td>
+          <td>$1,905.50</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Melbourne<span class="pill pill-blue">Sponsored Content</span></td>
+          <td>4,555</td>
+          <td>106</td>
+          <td>2.33%</td>
+          <td>$3.39</td>
+          <td>$358.99</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>16,962</td>
+          <td>156</td>
+          <td>0.92%</td>
+          <td>$14.52</td>
+          <td>$2,264.49</td>
+          <td>0</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="stat-row">
+      <span class="stat-item">CPM <strong>$133.50</strong></span>
+      <span class="stat-item">Landing page clicks <strong>156</strong></span>
+      <span class="stat-item" style="color:var(--amber);"><strong>Conversion tracking issue flagged - 0 conversions despite 156 landing page clicks</strong></span>
+    </div>
+
+    <div class="card-title" style="margin-top: 24px;">Sponsored Content - Creative Breakdown</div>
+    <table class="data-table" style="table-layout: fixed;">
+      <colgroup>
+        <col style="width: 19%">
+        <col style="width: 39%">
+        <col style="width: 11%">
+        <col style="width: 9%">
+        <col style="width: 11%">
+        <col style="width: 11%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Creative</th>
+          <th>Impr.</th>
+          <th>Clicks</th>
+          <th>CTR</th>
+          <th>CPC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Victoria (Geelong)</td>
+          <td style="color:var(--text2); font-weight:400;">Join us at the PEXA Clear Pop-Up - Register today</td>
+          <td>6,417</td>
+          <td>28</td>
+          <td>0.44%</td>
+          <td>$35.13</td>
+        </tr>
+        <tr>
+          <td>Victoria (Geelong)</td>
+          <td style="color:var(--text2); font-weight:400;">Join us and get clear on what's next - Register now</td>
+          <td>4,455</td>
+          <td>17</td>
+          <td>0.38%</td>
+          <td>$40.78</td>
+        </tr>
+        <tr>
+          <td>Victoria (Geelong)</td>
+          <td style="color:var(--text2); font-weight:400;">Is your path to compliance Clear? Register for the PEXA Clear Pop-Up Event</td>
+          <td>1,535</td>
+          <td>5</td>
+          <td>0.33%</td>
+          <td>$45.71</td>
+        </tr>
+        <tr>
+          <td>Melbourne</td>
+          <td style="color:var(--text2); font-weight:400;">Is your path to compliance Clear? Register for the PEXA Clear Pop-Up Event</td>
+          <td>1,420</td>
+          <td>50</td>
+          <td>3.52%</td>
+          <td>$2.48</td>
+        </tr>
+        <tr>
+          <td>Melbourne</td>
+          <td style="color:var(--text2); font-weight:400;">Join us at the PEXA Clear Pop-Up - Register today</td>
+          <td>1,476</td>
+          <td>31</td>
+          <td>2.10%</td>
+          <td>$4.03</td>
+        </tr>
+        <tr>
+          <td>Melbourne</td>
+          <td style="color:var(--text2); font-weight:400;">Join us and get clear on what's next - Register now</td>
+          <td>1,659</td>
+          <td>25</td>
+          <td>1.51%</td>
+          <td>$4.41</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="card-title" style="margin-top: 24px;">Message Ads (Sponsored InMail) - by Event</div>
+    <table class="data-table" style="table-layout: fixed;">
+      <colgroup>
+        <col style="width: 24%">
+        <col style="width: 26%">
+        <col style="width: 17%">
+        <col style="width: 17%">
+        <col style="width: 16%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Creative</th>
+          <th>Sends</th>
+          <th>Opens</th>
+          <th>Open rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Victoria (Geelong)</td>
+          <td style="color:var(--text2); font-weight:400;">Register Now</td>
+          <td>318</td>
+          <td>87</td>
+          <td>27.36%</td>
+        </tr>
+        <tr>
+          <td>Melbourne</td>
+          <td style="color:var(--text2); font-weight:400;">Register Now</td>
+          <td>54</td>
+          <td>13</td>
+          <td>24.07%</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td></td>
+          <td>372</td>
+          <td>100</td>
+          <td>26.88%</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="stat-row">
+      <span class="stat-item" style="font-size:11px;">Message Ads use sends/opens/CTR(send) rather than impressions. Pricing is per-send. LinkedIn InMail industry benchmark for open rate is ~30%.</span>
+    </div>
+  </div>
+
+  <div class="insight-card" style="border-left: 3px solid var(--amber); margin-bottom: 12px;">
+    <div class="insight-header">
+      <span class="insight-platform">Pop-Up Events - Findings</span>
+      <span class="insight-tag watch">Action required</span>
+    </div>
+    <ul class="insight-points">
+      <li contenteditable="false"><strong>Melbourne is materially outperforming Victoria on every efficiency metric.</strong> Melbourne is converting clicks at roughly 5-6x the CTR of Victoria (2.33% vs 0.40%) and 1/11th the CPC ($3.39 vs $38.11). The same three creative concepts are running across both events, so this is an audience or auction dynamic, not a creative problem.</li>
+      <li contenteditable="false"><strong>Victoria spend is ~5x Melbourne's ($1,906 vs $359) despite worse efficiency.</strong> This looks like a budget pacing setting on the Victoria campaign group rather than an active optimisation choice and should be reviewed before the next flight.</li>
+      <li contenteditable="false"><strong>Both campaigns are showing 0 conversions despite 156 landing page clicks.</strong> Likely the conversion pixel for the events isn't firing, or registrations are being tracked off-LinkedIn. To confirm before the next reporting cycle.</li>
+      <li contenteditable="false">The "Is your path to compliance Clear?" creative is the strongest performer on Melbourne (3.52% CTR, $2.48 CPC) but the weakest on Victoria (0.33% CTR, $45.71 CPC). The Melbourne creative ranking is the inverse of Victoria's, which further supports that the audience/auction context is the dominant variable here.</li>
+      <li contenteditable="false">Message Ads (Sponsored InMail) delivered a blended open rate of 26.88% (372 sends, 100 opens), slightly below LinkedIn's ~30% benchmark. Geelong opens (27.36%) are running ahead of Melbourne (24.07%), though the Melbourne sample (54 sends) is small.</li>
+      <li contenteditable="false"><span class="rec-label">Action required</span> Check with Bind whether the event conversion pixel is firing correctly, or confirm whether registrations are being tracked through a different system.</li>
+      <li contenteditable="false"><span class="rec-label">Recommendation</span> Rebalance budget toward Melbourne for any remaining flight - the efficiency gap is too large to ignore. If Victoria is being held at higher spend for reach or attendance reasons, that should be made explicit.</li>
+      <li contenteditable="false"><span class="rec-label">Recommendation</span> Pause "Is your path to compliance Clear?" on Victoria and concentrate Victoria spend on "Join us at the PEXA Clear Pop-Up - Register today" which is the strongest Victoria creative.</li>
+    </ul>
+  </div>
+  </div>
+
   <div class="notes">
     <div class="notes-title">Methodology Notes</div>
     <ul>
-      <li>Period: Monday 20 April to Monday 4 May 2026 inclusive (15 days).</li>
+      <li>Period: Monday 20 April to Tuesday 19 May 2026 inclusive (30 days).</li>
       <li>Meta: pulled at ad-set level for campaign "NB_BOF_Conversion_Apr_2026 — Book a Demo &amp; Register".</li>
       <li>LinkedIn: filtered to BOF/Conversions ad sets within NB_BOF_Acquisition_Apr_26 (excludes paused MOF Traffic ad sets).</li>
-      <li>The Trade Desk: account Bind Digital AUD. PEXA does not use BOF labelling on TTD — all delivering line items in the window are included.</li>
+      <li>The Trade Desk: account Bind Digital AUD. PEXA does not use BOF labelling on TTD — all delivering Display line items in the window are included. BVOD and Audio excluded.</li>
       <li>Currency: AUD throughout. Spend reflects platform-reported costs (Meta: cost; LinkedIn: total spent; TTD: advertiser cost in adv currency).</li>
-      <li>Conversions: Meta = website conversions; LinkedIn = total conversions; TTD = total conversion 01.</li>
+      <li>Conversions: Meta = website conversions; LinkedIn = total conversions; TTD = pixel events (Book a Demo Button Click + Completed; Register of Interest + Button Click + Successful Registration).</li>
       <li>PDOOH conversions are not directly trackable via TTD pixel — view-through attribution is excluded from conversion totals.</li>
       <li>Timezone: Trade Desk figures use Australia/Sydney. Meta and LinkedIn use UTC (platform default).</li>
+      <li>Pop-Up Events (Sponsored Content): account PEXA Clear (518688193), period 20 Apr - 19 May 2026. Campaign groups NB_BOF_Conversions_Event_Victoria_May_26 and NB_BOF_Conversions_Event_Melbourne_M, sub-campaigns "Website conversions - May 6, 2026".</li>
+      <li>Pop-Up Events (Message Ads): creative type SPONSORED_INMAILS (LinkedIn Message Ads, formerly Sponsored InMail). Sub-campaigns "Website conversions - May 7, 2026" (Victoria) and "Website conversions - May 14, 2026" (Melbourne).</li>
+      <li>Pop-Up Events conversions show as 0 across both events despite landing page clicks - to be confirmed with Bind whether the event pixel is firing or registrations are tracked off-platform.</li>
     </ul>
     <div class="footer-line">Prepared by Noisy Beast &nbsp;·&nbsp; May 2026</div>
   </div>
